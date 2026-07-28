@@ -1,0 +1,25 @@
+product_id,product_name,category,units_sold,unit_profit_margin,revenue
+2,Monitor,Electronics,166,1521.37,186282.69
+10,"Office Chair","Home Office",204,2448.58,184896.71
+26,"Face Cream",Beauty,176,1564.79,177968.91
+30,Laptop,Electronics,181,1957.06,168831.00
+5,Tablet,Electronics,159,1800.34,167978.56
+23,Treadmill,Fitness,214,2716.67,167923.06
+24,"Water Bottle",Fitness,162,1473.42,164342.80
+18,"Air Fryer",Kitchen,149,2267.54,159822.97
+6,Headphones,Electronics,193,1849.07,135573.59
+11,Lamp,"Home Office",204,2027.26,132029.95
+4,Mouse,Electronics,156,2876.98,123789.79
+14,Whiteboard,"Home Office",147,1468.31,99598.50
+25,"Hair Dryer",Beauty,173,2204.09,82157.29
+28,"Makeup Kit",Beauty,150,2035.12,73661.74
+17,Toaster,Kitchen,194,2248.97,67408.21
+8,Printer,Electronics,121,1900.74,66050.61
+22,"Resistance Bands",Fitness,170,2452.60,55692.22
+19,Kettle,Kitchen,177,2717.05,51413.97
+1,Laptop,Electronics,147,1863.77,45878.48
+9,Desk,"Home Office",155,1465.56,43979.03
+20,"Yoga Mat",Fitness,204,3533.79,41854.46
+3,Keyboard,Electronics,165,2602.06,41455.26
+12,Notebook,"Home Office",166,2124.41,29418.47
+27,Shampoo,Beauty,186,1631.27,13413.66

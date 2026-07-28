@@ -1,0 +1,7 @@
+issue,count,affected_id
+"Negative prices",49,"30, 30, 30, 30, 30, 30, 30, 30, 30, 30, 30, 30, 30, 30, 30, 30, 30, 30, 30, 30, 30, 30, 30, 30, 30, 30, 30, 30, 30, 30, 30, 30, 30, 30, 30, 30, 30, 30, 30, 30, 30, 30, 30, 30, 30, 30, 30, 30, 30"
+"Negative quantities",3,"1014, 1079, 1156"
+"Invalid discounts",2,"1022, 1135"
+"Duplicate emails",2,"44, 45"
+"Incorrect Date Campaign",1,7
+"Null Category",1,31

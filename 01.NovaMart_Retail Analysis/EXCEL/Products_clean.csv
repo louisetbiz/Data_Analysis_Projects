@@ -1,0 +1,25 @@
+product_id,product_name,category,unit_cost,units_sold,revenue,total_cost
+22,"Resistance Bands",Fitness,157.20,170,55692.22,26724.00
+28,"Makeup Kit",Beauty,285.65,150,73661.74,42847.50
+14,Whiteboard,"Home Office",486.88,147,99598.50,71571.36
+2,Monitor,Electronics,803.79,166,186282.69,133429.14
+18,"Air Fryer",Kitchen,492.68,149,159822.97,73409.32
+1,Laptop,Electronics,197.77,147,45878.48,29072.19
+30,Laptop,Electronics,600.00,181,168831.00,108600.00
+9,Desk,"Home Office",214.62,155,43979.03,33266.10
+10,"Office Chair","Home Office",504.14,204,184896.71,102844.56
+8,Printer,Electronics,281.38,121,66050.61,34046.98
+17,Toaster,Kitchen,222.61,194,67408.21,43186.34
+27,Shampoo,Beauty,52.76,186,13413.66,9813.36
+25,"Hair Dryer",Beauty,292.30,173,82157.29,50567.90
+11,Lamp,"Home Office",434.59,204,132029.95,88656.36
+5,Tablet,Electronics,668.11,159,167978.56,106229.49
+3,Keyboard,Electronics,117.74,165,41455.26,19427.10
+20,"Yoga Mat",Fitness,81.78,204,41854.46,16683.12
+12,Notebook,"Home Office",106.88,166,29418.47,17742.08
+19,Kettle,Kitchen,123.72,177,51413.97,21898.44
+4,Mouse,Electronics,341.32,156,123789.79,53245.92
+24,"Water Bottle",Fitness,737.83,162,164342.80,119528.46
+23,Treadmill,Fitness,449.72,214,167923.06,96240.08
+26,"Face Cream",Beauty,742.48,176,177968.91,130676.48
+6,Headphones,Electronics,500.28,193,135573.59,96554.04

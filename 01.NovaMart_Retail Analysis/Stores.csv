@@ -1,0 +1,16 @@
+store_name,region,orders,customers,net_revenue
+"Store 11",West,27,25,165546.30
+"Store 3",West,26,22,140103.81
+"Store 7",South,24,21,139209.57
+"Store 6",East,25,23,137974.71
+"Store 12",East,27,25,136542.64
+"Store 1",Central,21,21,133853.66
+"Store 10",Central,26,23,128644.58
+"Store 14",Central,20,20,112013.48
+"Store 8",East,22,21,110872.92
+"Store 13",South,21,19,110144.93
+"Store 2",South,21,19,98732.76
+"Store 5",West,19,15,89537.55
+"Store 9",Central,17,15,71936.77
+"Store 15",South,15,14,70890.48
+"Store 4",South,12,12,59194.54
