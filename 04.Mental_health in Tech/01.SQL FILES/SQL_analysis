@@ -1,0 +1,72 @@
+# MAIN FILE:
+
+CREATE OR REPLACE VIEW `my-portfolio-louisetbiz.Mental_Health.cleaned_survey_view` AS
+SELECT 
+  Country,
+  CASE
+    WHEN LOWER(Gender) IN ('male', 'm', 'man', 'male ') THEN 'Male'
+    WHEN LOWER(Gender) IN ('female', 'f', 'woman', 'female ') THEN 'Female'
+    ELSE 'Other'
+  END AS Gender,
+
+  CASE 
+    WHEN remote_work = TRUE THEN 'Remote Work'
+    WHEN remote_work = FALSE THEN 'Not Remote Work'
+    ELSE 'Unknown'
+  END AS remote_work,
+
+  CASE
+    WHEN Age BETWEEN 18 AND 24 THEN '18-24'
+    WHEN Age BETWEEN 25 AND 34 THEN '25-34'
+    WHEN Age BETWEEN 35 AND 44 THEN '35-44'
+    WHEN Age BETWEEN 45 AND 54 THEN '45-54'
+    ELSE '55+'
+  END AS age_group,
+
+  self_employed, --NA
+  no_employees,
+  work_interfere, --NA
+  tech_company,
+  benefits,
+  seek_help,
+  mental_health_consequence,
+
+
+FROM `my-portfolio-louisetbiz.Mental_Health.Mental_health_tech_survey`
+
+
+WHERE age >= 18 AND age <= 65
+  AND self_employed IS NOT NULL
+  AND UPPER(self_employed) != 'NA'
+  AND work_interfere IS NOT NULL
+  AND UPPER(work_interfere) != 'NA'
+
+
+
+
+# KPI FILES:
+
+CREATE OR REPLACE VIEW `my-portfolio-louisetbiz.Mental_Health.kpi_summary` AS
+SELECT
+
+  -- Total respondents
+  COUNT(*) AS total_respondents,
+
+  -- Gender distribution
+  COUNTIF(Gender = 'Male') AS male_count,
+  COUNTIF(Gender = 'Female') AS female_count,
+  COUNTIF(Gender = 'Other') AS other_count,
+
+  -- KPI: % remote workers
+  SAFE_DIVIDE(COUNTIF(remote_work = TRUE), COUNT(*)) AS pct_remote_work,
+
+  -- KPI: % seeking help
+  SAFE_DIVIDE(COUNTIF(seek_help = 'Yes'), COUNT(*)) AS pct_seek_help,
+
+  -- KPI: % reporting mental health consequences
+  SAFE_DIVIDE(COUNTIF(mental_health_consequence = 'Yes'), COUNT(*)) AS pct_mental_health_consequence,
+
+  -- KPI: % with benefits
+  SAFE_DIVIDE(COUNTIF(benefits = 'Yes'), COUNT(*)) AS pct_benefits
+
+FROM `my-portfolio-louisetbiz.Mental_Health.cleaned_survey`;
